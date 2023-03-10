@@ -1,0 +1,431 @@
+/* 字型引用 */
+@font-face {
+    font-family: 'GenJyuuGothic-Heavy';
+    src: local("GenJyuuGothic-Heavy"),
+        url('../fort/GenJyuuGothic-Heavy.woff') format("woff"),
+        url('../fonts/GenJyuuGothic-Heavy.ttf') format("opentype"),
+        url('../fonts/GenJyuuGothic-Heavy..eot') format("embedded-opentype");
+}
+
+:root{
+    --MainBlue:#112448;
+    --White:#f5f9ff
+}
+
+
+/* 字型 */
+body {
+    font-family: GenJyuuGothic-Heavy;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a{
+    text-decoration:none;
+    color:var(--MainBlue)
+}
+/* 字體大小 */
+p {
+    font-size: 1.2rem;
+}
+
+/* 測試背景顏色 */
+
+#SCHOOL_CLUB {
+    background-image: url(./img/bg_star.png);
+}
+
+#CONTACAT {
+    background-image: url(./img/bg_star.png);
+    background-repeat: repeat;
+
+
+}
+
+#ABOUT{
+    background-color:  rgba(17, 36, 72, 1);
+    color: white;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(228, 228, 228, 0.342);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1025;
+    font-size: 1.4rem;
+    color:var(--MainBlue);
+    padding:0 20px;
+}
+
+nav>div>ul{
+    display: flex;
+}
+
+nav>div>ul>li{
+    list-style-type:none;
+    text-align: center;
+    margin: 0 30px;
+}
+
+#index {
+    background-color: var(--MainBlue);
+    position: relative;
+}
+
+#index>img{
+    width: 100%;
+    margin: auto;
+}
+
+#index>div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 250px;
+    top: 130px;
+}
+
+#index>div>span{
+    font-size: 5rem;
+        -webkit-text-stroke: 3px rgb(255, 255, 255);
+    color: transparent;
+    /* color: var(--White); */
+    border-radius: 10px;
+    padding: 15px;
+    /* margin: 20px; */
+    letter-spacing: 0.02em;
+}
+
+#AWARDS{
+    background-color:var(--MainBlue);
+    background-image: url(./img/bg_award.png);
+}
+
+#PORTFOLIO_T{
+    color: #F2A0A7;
+    border: 6px;
+    border-style:dashed;
+    background-color: var(--White);
+    border-color: #F2A0A7;
+    border-radius: 25px;
+    padding: 30px;
+    height: 280px;
+}
+
+/* 內容對齊方式 */
+#sroll {
+    display: block;
+    margin: auto;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    padding: 100px 230px;
+}
+
+#AWARDS {
+    height: 1000px;
+    padding: 100px 0 100px 100px;
+}
+
+#awards_T {
+    float: left;
+    margin: 50px 0 0 0;
+}
+
+#awards_T>h2{
+    color: var(--White);
+}
+
+
+#AWARDS img {
+    float: right;
+}
+
+
+#PORTFOLIO {
+    clear: both;
+    display: flex;
+    background-image: url(./img/bg.png);
+}
+
+#PORTFOLIO_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+
+#PORTFOLIO_1_content{
+    display: flex;
+    padding: 50px;
+    margin: 0 50px;
+    justify-content: center;
+}
+
+#PORTFOLIO_1_content>div:nth-child(1){
+    margin: 0 50px;
+}
+
+#PORTFOLIO_btn{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#collapse_song{
+    width: 100%;
+    /* height: 2000px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+
+.img_song{
+    margin-bottom: 30px;
+}
+
+#collapse_song_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+
+#collapse_song_T{
+    width: 500px;
+    margin: 0 50px;
+}
+
+.img_song_front{
+    position: relative;
+    
+}
+.img_song_back{
+    position: absolute;
+}
+
+.song>img{
+    border-radius: 15px;
+}
+
+.img_song_front:hover{
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+#PORTFOLIO_2{
+    background-image: url(./img/bg.png);
+}
+
+#PORTFOLIO_2_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 180px 0;
+    background-image: url(./img/bg.png);
+}
+#PORTFOLIO_2_content>h2{
+    padding-bottom: 30px;
+}
+
+#PORTFOLIO_2_cardT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(./img/bg_lufa.png);
+}
+
+#PORTFOLIO_2_cardT>p{
+    width: 750px;
+}
+
+#PORTFOLIO_2_viedo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+#SCHOOL_CLUB {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 60px 100px;
+}
+
+.CLUB_photo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.CLUB_photo img {
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px;
+}
+
+
+#CLUB_photo2 {
+    margin-top: 200px;
+}
+
+#Banana_UFO {
+    float: right;
+
+}
+
+#CLUB_text {
+    width: 70%;
+    color: var(--White);
+
+}
+
+h3{
+    color: rgb(92, 243, 243);
+}
+
+#CONTACAT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mail>form{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+
+}
+
+.page{
+    padding-top:100px ;
+}
+
+
+/* 區塊寬度設定 */
+#about_T {
+    width: 500px;
+}
+
+#CONTACAT {
+    padding-bottom:80px ;
+}
+
+#collapse{
+    margin: 0 150px;
+    width: 80%;
+}
+
+
+/* 背景裝飾 */
+
+
+/* #BG_bubble {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    rotate: 45deg;
+} */
+
+#AWARDS {
+    position: relative;
+}
+
+#Banana_Talk {
+    position: absolute;
+    bottom: 80px;
+    left: 200px;
+    width: 450px;
+}
+
+#boder{
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#SCHOOL_CLUB{
+    position: relative;
+}
+
+#bodertop{
+    position: absolute;
+    top: -170px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+input{
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+textarea
+{
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+
+/* 跑馬燈 */
+
+.marquee {
+    overflow: hidden;
+    padding-top:50px ;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scrolling 40s linear infinite;
+}
+
+.marquee-item {
+    /* flex: 0 0 16vw;
+    margin: 0 1vw; */
+      flex: 0 0 30vw;
+      margin: 0 1vw;
+}
+
+.marquee-item img {
+    display: block;
+    width: 100%;
+    /* padding: 0 20px; */
+    border-radius: 25px;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translatex(-144vw);
+    }
+}
