@@ -7,9 +7,10 @@
         url('../fonts/GenJyuuGothic-Heavy..eot') format("embedded-opentype");
 }
 
-:root{
-    --MainBlue:#112448;
-    --White:#f5f9ff
+:root {
+    --MainBlue: #112448;
+    --White: #f5f9ff;
+    --Pink:#F2A0A7;
 }
 
 
@@ -20,10 +21,11 @@ body {
     margin: 0;
 }
 
-a{
-    text-decoration:none;
-    color:var(--MainBlue)
+a {
+    text-decoration: none;
+    color: var(--MainBlue)
 }
+
 /* 字體大小 */
 p {
     font-size: 1.2rem;
@@ -42,10 +44,36 @@ p {
 
 }
 
-#ABOUT{
-    background-color:  rgba(17, 36, 72, 1);
+#ABOUT {
+    background-color: var(--MainBlue);
     color: white;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+#ABOUT>div {
+    display: inline-flex;
+    flex-direction: row;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+
+#ABOUT>div>img{
+    max-width: 30vw;
+    min-width:400px;
+    padding-right: 50px;
+}
+
+#ABOUT>div>div>img{
+    width: 10vw;
 }
 
 nav {
@@ -60,16 +88,16 @@ nav {
     width: 100%;
     z-index: 1025;
     font-size: 1.4rem;
-    color:var(--MainBlue);
-    padding:0 20px;
+    color: var(--MainBlue);
+    padding: 0 20px;
 }
 
-nav>div>ul{
+nav>div>ul {
     display: flex;
 }
 
-nav>div>ul>li{
-    list-style-type:none;
+nav>div>ul>li {
+    list-style-type: none;
     text-align: center;
     margin: 0 30px;
 }
@@ -79,12 +107,12 @@ nav>div>ul>li{
     position: relative;
 }
 
-#index>img{
+#index>img {
     width: 100%;
     margin: auto;
 }
 
-#index>div{
+#index>div {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -92,26 +120,46 @@ nav>div>ul>li{
     top: 130px;
 }
 
-#index>div>span{
+#index>div>span {
     font-size: 5rem;
-        -webkit-text-stroke: 3px rgb(255, 255, 255);
+    -webkit-text-stroke: 3px var(--White);
     color: transparent;
-    /* color: var(--White); */
     border-radius: 10px;
     padding: 15px;
-    /* margin: 20px; */
     letter-spacing: 0.02em;
 }
 
-#AWARDS{
-    background-color:var(--MainBlue);
-    background-image: url(./img/bg_award.png);
+#AWARDS {
+    background-image: url(../img/bg_star.png);
+    background-repeat: repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px 0px;
+    width: 100%;
 }
 
-#PORTFOLIO_T{
+#AWARDS>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White);
+    background-image: url(../img/bg_award.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 30px 100px;
+
+}
+
+#AWARDS>div>img {
+    width: 50%;
+}
+
+#PORTFOLIO_T {
     color: #F2A0A7;
     border: 6px;
-    border-style:dashed;
+    border-style: dashed;
     background-color: var(--White);
     border-color: #F2A0A7;
     border-radius: 25px;
@@ -119,149 +167,18 @@ nav>div>ul>li{
     height: 280px;
 }
 
-/* 內容對齊方式 */
-#sroll {
-    display: block;
-    margin: auto;
-}
-
-.about_content {
-    display: flex;
-    justify-content: center;
-    padding: 100px 230px;
-}
-
-#AWARDS {
-    height: 1000px;
-    padding: 100px 0 100px 100px;
-}
-
-#awards_T {
-    float: left;
-    margin: 50px 0 0 0;
-}
-
-#awards_T>h2{
-    color: var(--White);
-}
-
-
-#AWARDS img {
-    float: right;
-}
-
-
 #PORTFOLIO {
-    clear: both;
-    display: flex;
-    background-image: url(./img/bg.png);
-}
-
-#PORTFOLIO_content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
-}
-
-
-#PORTFOLIO_1_content{
-    display: flex;
-    padding: 50px;
-    margin: 0 50px;
     justify-content: center;
-}
-
-#PORTFOLIO_1_content>div:nth-child(1){
-    margin: 0 50px;
-}
-
-#PORTFOLIO_btn{
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-#collapse_song{
-    width: 100%;
-    /* height: 2000px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
+    background-image: url(../img/bg_boder.png), url(../img/bg.png);
+    background-repeat: repeat-x, repeat;
 }
 
 
 
-.img_song{
-    margin-bottom: 30px;
-}
 
-#collapse_song_img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px;
-
-}
-
-
-#collapse_song_T{
-    width: 500px;
-    margin: 0 50px;
-}
-
-.img_song_front{
-    position: relative;
-    
-}
-.img_song_back{
-    position: absolute;
-}
-
-.song>img{
-    border-radius: 15px;
-}
-
-.img_song_front:hover{
-    opacity: 0;
-    transition: 500ms ease-in-out;
-}
-
-#PORTFOLIO_2{
-    background-image: url(./img/bg.png);
-}
-
-#PORTFOLIO_2_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0 180px 0;
-    background-image: url(./img/bg.png);
-}
-#PORTFOLIO_2_content>h2{
-    padding-bottom: 30px;
-}
-
-#PORTFOLIO_2_cardT{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    background-image: url(./img/bg_lufa.png);
-}
-
-#PORTFOLIO_2_cardT>p{
-    width: 750px;
-}
-
-#PORTFOLIO_2_viedo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-}
 
 #SCHOOL_CLUB {
     display: flex;
@@ -286,7 +203,7 @@ nav>div>ul>li{
     margin-top: 200px;
 }
 
-#Banana_UFO {
+bubble #Banana_UFO {
     float: right;
 
 }
@@ -297,17 +214,17 @@ nav>div>ul>li{
 
 }
 
-h3{
+h3 {
     color: rgb(92, 243, 243);
 }
 
-#CONTACAT{
+#CONTACAT {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#mail>form{
+#mail>form {
     width: 900px;
     display: flex;
     flex-direction: column;
@@ -318,21 +235,15 @@ h3{
 
 }
 
-.page{
-    padding-top:100px ;
-}
 
 
 /* 區塊寬度設定 */
-#about_T {
-    width: 500px;
-}
 
 #CONTACAT {
-    padding-bottom:80px ;
+    padding-bottom: 80px;
 }
 
-#collapse{
+#collapse {
     margin: 0 150px;
     width: 80%;
 }
@@ -341,37 +252,35 @@ h3{
 /* 背景裝飾 */
 
 
-/* #BG_bubble {
+#BG_bubble {
     position: absolute;
     top: 0;
     left: -30px;
     rotate: 45deg;
-} */
-
-#AWARDS {
-    position: relative;
+    width: 10vw;
 }
 
 #Banana_Talk {
     position: absolute;
     bottom: 80px;
-    left: 200px;
-    width: 450px;
+    left: 450px;
+    width: 25vw;
 }
 
-#boder{
+/* #boder {
     position: absolute;
-    bottom: -95px;
+    bottom: -100px;
     left: 0;
-    width: 100%;
+    height: 100px;
     overflow: hidden;
-}
+    border: 3px solid rebeccapurple;
+} */
 
-#SCHOOL_CLUB{
+#SCHOOL_CLUB {
     position: relative;
 }
 
-#bodertop{
+#bodertop {
     position: absolute;
     top: -170px;
     left: 0;
@@ -380,14 +289,13 @@ h3{
 
 }
 
-input{
+input {
     border: 0px;
     border-radius: 5px;
 
 }
 
-textarea
-{
+textarea {
     border: 0px;
     border-radius: 5px;
 }
@@ -398,7 +306,7 @@ textarea
 
 .marquee {
     overflow: hidden;
-    padding-top:50px ;
+    padding-top: 50px;
 }
 
 .marquee-content {
@@ -409,8 +317,8 @@ textarea
 .marquee-item {
     /* flex: 0 0 16vw;
     margin: 0 1vw; */
-      flex: 0 0 30vw;
-      margin: 0 1vw;
+    flex: 0 0 30vw;
+    margin: 0 1vw;
 }
 
 .marquee-item img {

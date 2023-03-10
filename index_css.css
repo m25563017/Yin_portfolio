@@ -14,7 +14,7 @@
 body {
     font-family: GenJyuuGothic-Heavy;
     padding-top: 80px;
-    color: rgb(17, 36, 72);
+    color: var(--);
 }
 
 a{

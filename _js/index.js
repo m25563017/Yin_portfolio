@@ -1,3 +1,5 @@
+
+
 //宣告預設表單內容為空
 var initSubject = '', initBody = '';
 
