@@ -27,15 +27,6 @@ a {
 }
 
 /* 字體大小 */
-p {
-    font-size: 1.2rem;
-}
-
-/* 測試背景顏色 */
-
-#SCHOOL_CLUB {
-    background-image: url(./img/bg_star.png);
-}
 
 #CONTACAT {
     background-image: url(./img/bg_star.png);
@@ -67,8 +58,7 @@ p {
 }
 
 #ABOUT>div>img{
-    max-width: 30vw;
-    min-width:400px;
+    width: 30vw;
     padding-right: 50px;
 }
 
@@ -130,8 +120,9 @@ nav>div>ul>li {
 }
 
 #AWARDS {
-    background-image: url(../img/bg_star.png);
-    background-repeat: repeat;
+    background-image: url(../img/bg_award.png),url(../img/bg_star.png);
+    background-repeat: no-repeat,repeat;
+    background-position: bottom left,center;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -145,26 +136,12 @@ nav>div>ul>li {
     align-items: center;
     justify-content: space-between;
     color: var(--White);
-    background-image: url(../img/bg_award.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 0px 0px 30px 100px;
 
 }
 
 #AWARDS>div>img {
     width: 50%;
-}
-
-#PORTFOLIO_T {
-    color: #F2A0A7;
-    border: 6px;
-    border-style: dashed;
-    background-color: var(--White);
-    border-color: #F2A0A7;
-    border-radius: 25px;
-    padding: 30px;
-    height: 280px;
 }
 
 #PORTFOLIO {
@@ -177,19 +154,44 @@ nav>div>ul>li {
 }
 
 
-
+#PORTFOLIO_2{
+    background-image: url(../img/bg_bodertop.png),url(../img/bg.png);
+    background-repeat: repeat-x,repeat;
+    background-position: bottom,center;
+}
 
 
 #SCHOOL_CLUB {
+    background-image: url(../img/bg_star.png);
     display: flex;
     justify-content: center;
     padding: 100px 0 60px 100px;
+    position: relative;
+    color: var(--White);
 }
+
+
+#SCHOOL_CLUB>div:nth-child(1){
+    width: 35vw;
+}
+
+
+#SCHOOL_CLUB>div:nth-child(2){
+    padding: 30px 10px;
+
+}
+
+#SCHOOL_CLUB>div:nth-child(3){
+    padding: 300px 10px 0px 10px;
+
+}
+
+
 
 .CLUB_photo {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20vw;
 }
 
 .CLUB_photo img {
@@ -203,7 +205,8 @@ nav>div>ul>li {
     margin-top: 200px;
 }
 
-bubble #Banana_UFO {
+#Banana_UFO {
+    width: 20vw;
     float: right;
 
 }
@@ -214,11 +217,13 @@ bubble #Banana_UFO {
 
 }
 
-h3 {
-    color: rgb(92, 243, 243);
+.titleimg{
+    width: 25vw;
 }
 
+
 #CONTACAT {
+    background-image: url(../img/bg_star.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,22 +236,8 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 30px;
-
-
 }
 
-
-
-/* 區塊寬度設定 */
-
-#CONTACAT {
-    padding-bottom: 80px;
-}
-
-#collapse {
-    margin: 0 150px;
-    width: 80%;
-}
 
 
 /* 背景裝飾 */
@@ -265,19 +256,6 @@ h3 {
     bottom: 80px;
     left: 450px;
     width: 25vw;
-}
-
-/* #boder {
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    height: 100px;
-    overflow: hidden;
-    border: 3px solid rebeccapurple;
-} */
-
-#SCHOOL_CLUB {
-    position: relative;
 }
 
 #bodertop {
