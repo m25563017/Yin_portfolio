@@ -10,7 +10,7 @@
 :root {
     --MainBlue: #112448;
     --White: #f5f9ff;
-    --Pink:#F2A0A7;
+    --Pink: #F2A0A7;
 }
 
 
@@ -21,12 +21,18 @@ body {
     margin: 0;
 }
 
+span {
+    font-size: 1.4rem;
+}
+
 a {
     text-decoration: none;
     color: var(--MainBlue)
 }
 
-/* 字體大小 */
+section {
+    padding: 0 0 50px 0;
+}
 
 #CONTACAT {
     background-image: url(./img/bg_star.png);
@@ -54,15 +60,16 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0 30px;
-    
+    min-width: 300px;
+
 }
 
-#ABOUT>div>img{
+#ABOUT>div>img {
     width: 30vw;
     padding-right: 50px;
 }
 
-#ABOUT>div>div>img{
+#ABOUT>div>div>img {
     width: 10vw;
 }
 
@@ -90,6 +97,21 @@ nav>div>ul>li {
     list-style-type: none;
     text-align: center;
     margin: 0 30px;
+}
+
+nav>a:after,
+nav>div>ul>li>a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px var(--MainBlue);
+    transform: scaleX(0);
+    transform-origin: 0%;
+    transition: transform 250ms ease-in-out;
+}
+
+nav>a:hover:after,
+nav>div>ul>li>a:hover:after {
+    transform: scaleX(1);
 }
 
 #index {
@@ -120,9 +142,9 @@ nav>div>ul>li {
 }
 
 #AWARDS {
-    background-image: url(../img/bg_award.png),url(../img/bg_star.png);
-    background-repeat: no-repeat,repeat;
-    background-position: bottom left,center;
+    background-image: url(../img/bg_award.png), url(../img/bg_star.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom left, center;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -144,21 +166,115 @@ nav>div>ul>li {
     width: 50%;
 }
 
+#AWARDS>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
 #PORTFOLIO {
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/bg_boder.png), url(../img/bg.png);
-    background-repeat: repeat-x, repeat;
+    background-image: url(../img/bg_boder.png),url(../img/bg_bodertop.png), url(../img/bg.png);
+    background-repeat: repeat-x,repeat-x, repeat;
+    background-position: top,bottom,center;
 }
 
-
-#PORTFOLIO_2{
-    background-image: url(../img/bg_bodertop.png),url(../img/bg.png);
-    background-repeat: repeat-x,repeat;
-    background-position: bottom,center;
+#PORTFOLIO .title_txt{
+    margin-bottom: 40px;
 }
+
+#PORTFOLIO>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#P_draw{
+    /* width: 60vw; */
+    text-align: center;
+}
+
+#P_animate>div>a>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--Pink);
+    border-radius: 30px;
+    background-color: var(--White);
+    padding: 0px 0px 30px 0px;
+    transition: transform 0.3s ease;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(176, 176, 176, 1);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(176, 176, 176, 1);
+    box-shadow: 10px 10px 15px 0px rgba(176, 176, 176, 1);
+}
+
+#P_animate>div>a>div:hover {
+    transform: translateY(-10%);
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#card>a {
+    padding: 40px 20px;
+
+}
+
+#P_animate>div>a>div>img {
+    width: 25vw;
+    margin-bottom: 40px;
+    border-radius: 30px 30px 0 0;
+}
+
+#P_animate{
+    padding: 80px 0;
+}
+
+#P_foodwar>div{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#P_foodwar>div>div>div{
+    display: flex;
+    padding: 50px 0;
+}
+/* ------------------------ */
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+/* ----------------------------------- */
 
 
 #SCHOOL_CLUB {
@@ -171,17 +287,17 @@ nav>div>ul>li {
 }
 
 
-#SCHOOL_CLUB>div:nth-child(1){
+#SCHOOL_CLUB>div:nth-child(1) {
     width: 35vw;
 }
 
 
-#SCHOOL_CLUB>div:nth-child(2){
+#SCHOOL_CLUB>div:nth-child(2) {
     padding: 30px 10px;
 
 }
 
-#SCHOOL_CLUB>div:nth-child(3){
+#SCHOOL_CLUB>div:nth-child(3) {
     padding: 300px 10px 0px 10px;
 
 }
@@ -206,8 +322,11 @@ nav>div>ul>li {
 }
 
 #Banana_UFO {
+    position: sticky;
+    top: 0;
     width: 20vw;
     float: right;
+    padding-top: 70px;
 
 }
 
@@ -217,10 +336,27 @@ nav>div>ul>li {
 
 }
 
-.titleimg{
-    width: 25vw;
+.titleimg {
+    width: 20vw;
 }
 
+.title_txt {
+    font-size: 2.5rem;
+}
+
+.title2{
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  .wrapper img{
+    width: 20vw;
+  }
 
 #CONTACAT {
     background-image: url(../img/bg_star.png);
@@ -251,6 +387,37 @@ nav>div>ul>li {
     width: 10vw;
 }
 
+#BG_bubble1 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    rotate: 45deg;
+    width: 12vw;
+}
+
+#BG_bubble2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    rotate: 45deg;
+    width: 5vw;
+}
+
+#BG_bubble3 {
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    width: 5vw;
+}
+
+#BG_bubble4 {
+    position: absolute;
+    bottom:0;
+    right: 200px;
+    rotate: 45deg;
+    width: 8vw;
+}
+
 #Banana_Talk {
     position: absolute;
     bottom: 80px;
@@ -276,42 +443,4 @@ input {
 textarea {
     border: 0px;
     border-radius: 5px;
-}
-
-
-
-/* 跑馬燈 */
-
-.marquee {
-    overflow: hidden;
-    padding-top: 50px;
-}
-
-.marquee-content {
-    display: flex;
-    animation: scrolling 40s linear infinite;
-}
-
-.marquee-item {
-    /* flex: 0 0 16vw;
-    margin: 0 1vw; */
-    flex: 0 0 30vw;
-    margin: 0 1vw;
-}
-
-.marquee-item img {
-    display: block;
-    width: 100%;
-    /* padding: 0 20px; */
-    border-radius: 25px;
-}
-
-@keyframes scrolling {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translatex(-144vw);
-    }
 }

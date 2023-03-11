@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>YIN ZI-XUAN</title>
     <link rel="stylesheet" href="./_css/index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
+
 <body>
     <header>
+        <a name="top"></a>
         <section id="index">
             <nav>
-                <div>
-                    <img src="" alt="">
-                    <a href="">YIN ZI-XUAN</a>
-                </div>
-
+                <a href="#">YIN ZI-XUAN</a>
                 <div>
                     <ul>
                         <li><a href="#ABOUT">ABOUT</a></li>
@@ -46,38 +45,41 @@
                 <img src="./img/about.png" alt="殷子琁">
                 <div>
                     <div>
-                        <img src="./img/title/about.png" width="200px" alt="">
+                        <img class="titleimg" src="./img/title/about.png" width="200px" alt="">
                     </div>
                     <br>
-                    <p>哈囉！我是殷子琁，畢業於亞洲大學數位媒體設計系，目前為應屆畢業生。
-                        興趣廣泛喜歡嘗試新事物，主要擅長影像後製及平面設計，也會基礎的網頁設計、3D建模、unity操作。</p>
+                    <span>哈囉！我是殷子琁，畢業於亞洲大學數位媒體設計系，目前為應屆畢業生。
+                        興趣廣泛喜歡嘗試新事物，主要擅長影像後製及平面設計，也會基礎的網頁設計、3D建模、unity操作。</span><br><br>
 
-                    <p>插畫以繪本風格為主，喜歡可愛治癒的氛圍，特別喜歡畫花草、星空
-                        ，主題依心情而定，想畫什麼就畫什麼！</p>
+                    <span>插畫以繪本風格為主，喜歡可愛治癒的氛圍，特別喜歡畫花草、星空
+                        ，主題依心情而定，想畫什麼就畫什麼！</span> <br> <br>
 
-                    <p>平時的休閒興趣就是看看漫畫、跟朋友一起玩遊戲還有陪我家貓咪，跟看日本人做料理的影片(這個好讚 我可以看40分鐘的炸豬排製作過程)。</p>
+                    <span>平時的休閒興趣就是看看漫畫、跟朋友一起玩遊戲還有陪我家貓咪。</span>
 
-                    <p>很開心能認識大家:D</p>
+                    <span>很開心能認識大家:D</span>
                 </div>
             </div>
             <img src="./img/B1.png" id="BG_bubble">
+            <img src="./img/B2.png" id="BG_bubble1">
+            <img src="./img/B3.png" id="BG_bubble2">
+            <img src="./img/B1.png" id="BG_bubble3">
+            <img src="./img/B3.png" id="BG_bubble4">
 
         </section>
 
         <section id="AWARDS">
             <div>
                 <div>
-                    <h1>得獎紀錄</h1>
-                    <h3>AWARDS</h3>
-                    <h2>⋄2018</h2>
-                    <p>瓩設計獎 kW Design Award─第19屆創意競賽 - 入圍</p>
-                    <h2>⋄2020</h2>
-                    <p>第四屆「Don't tag me」短片、動畫徵件活動 - 金獎</p>
-                    <p>極客松X創客松創新創意競賽（極客松虛擬網紅組） - 金獎</p>
-                    <h2>⋄2021</h2>
-                    <p>極客松X創客松創新創意競賽（極客松角色設計組）- 金獎</p>
-                    <h2>⋄2022</h2>
-                    <p>放視大賞 遊戲類PC組 - 入圍</p>
+                    <span class="title_txt">得獎紀錄</span>
+                    <span>⋄2018</span>
+                    <span>瓩設計獎 kW Design Award─第19屆創意競賽 - 入圍</span>
+                    <span>⋄2020</span>
+                    <span>第四屆「Don't tag me」短片、動畫徵件活動 - 金獎</span>
+                    <span>極客松X創客松創新創意競賽（極客松虛擬網紅組） - 金獎</span>
+                    <span>⋄2021</span>
+                    <span>極客松X創客松創新創意競賽（極客松角色設計組）- 金獎</span>
+                    <span>⋄2022</span>
+                    <span>放視大賞 遊戲類PC組 - 入圍</span>
                 </div>
                 <img src="./photo/S__5283845.jpg" width="800px" alt="得獎照片">
             </div>
@@ -85,110 +87,123 @@
         </section>
 
         <section id="PORTFOLIO">
-            <div>
-                <img src="./img/title/portfolio.png" alt=""><br><br>
-                <h2>⋄ 平面插畫 ⋄</h2>
-                
-        </section>
+            <div id="P_draw">
+                <img class="titleimg" src="./img/title/portfolio.png" alt=""><br><br>
+                <span class="title_txt">⋄ 平面插畫 ⋄</span>
+                <span>歌曲印象</span>
+                <div class="wrapper">
+                    <div><img src="./img/(2)結月.png" alt=""></div>
+                    <div><img src="./img/(10)我巨大的悲傷.png" alt=""></div>
+                    <div><img src="./img/(16)echo.png" alt=""></div>
+                    <div><img src="./img/(12)號哭.png" alt=""></div>
+                    <div><img src="./img/(4)about me.png" alt=""></div>
+                    <div><img src="./img/(14)インタビュア.png" alt=""></div>
+                </div>
 
-        <section id="PORTFOLIO_1">
-            <div>
-                <div>
-                    <h2>⋄ 動態作品 ⋄</h2>
-                    <br>
-                    <div>
-                        <p>動態創作的部分以音樂PV和MG動畫為主，也喜歡剪輯vlog。</p>
-                        <p>使用工具為Adobe After Effects、Adobe Premiere Pro。</p>
+
+
+
+                <span>其他創作</span>
+
+                <!-- <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                  </div> -->
+                <div class="wrapper">
+                    <div><img src="./img/other1.png" alt=""></div>
+                    <div><img src="./img/other2.png" alt=""></div>
+                    <div><img src="./img/other3.png" alt=""></div>
+                    <div><img src="./img/other4.png" alt=""></div>
+                    <div><img src="./img/other5.png" alt=""></div>
+                    <div><img src="./img/other6.png" alt=""></div>
+                    <div><img src="./img/other7.png" alt=""></div>
+                    <div><img src="./img/other8.png" alt=""></div>
+                    <div><img src="./img/other9.png" alt=""></div>
+                </div>
+
+            </div>
+
+            <div id="P_animate">
+                <span class="title_txt">⋄ 動態作品 ⋄</span>
+                <div>
+                    <span>動態創作的部分以音樂PV和MG動畫為主，也喜歡剪輯vlog。</span><br>
+                    <span>使用工具為Adobe After Effects、Adobe Premiere Pro。</span>
+                </div>
+                <div id="card">
+                    <a href="https://youtu.be/YUCconDTKC0" target="_blank">
+                        <div>
+                            <img src="./img/card1.png" alt="">
+                            <span>PV創作</span><br>
+                            <span>YuNi/青と夏</span>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/FOV6KeNfFWw" target="_blank">
+                        <div>
+                            <img src="./img/card2.png" alt="">
+                            <span>PV創作</span><br>
+                            <span>珂拉琪 Collage／MALIYANG</span>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/XTz-hQ6F1hE" target="_blank">
+                        <div>
+                            <img src="./img/card3.png" alt="">
+                            <span>動畫製作</span><br>
+                            <span>薑餅人王國二創/毒蘑菇寶寶生日快樂</span>
+                        </div>
+                    </a>
                 </div>
             </div>
 
 
-        </section>
-
-        <section id="PORTFOLIO_2">
-            <div>
-                <h2>⋄ 畢業專題-遊戲介面設計 ⋄</h2>
-                <div id="carousel" data-bs-interval="3000" class="carousel slide" data-bs-ride="carousel"
-                    style="width: 780px;;">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"
-                            aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="6"
-                            aria-label="Slide 7"></button>
+            <div id="P_foodwar">
+                <span class="title_txt">⋄ 畢業專題-遊戲介面設計 ⋄</span>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/carousel_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/carousel_2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/carousel_3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/carousel_4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/carousel_5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/carousel_6.jpg" alt=""></div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carousel_1.jpg" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_2.png" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_3.jpg" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_4.jpg" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_5.jpg" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_6.jpg" width="750px">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carousel_7.png" width="750px">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        點我看更多！
-                    </a>
-                </p>
-                <div class="collapse" id="collapse">
-                    <div class="card card-body">
-                        <h2>⋄ 專題遊戲簡介 ⋄</h2>
+                <div>
+                    <div>
+                        <span>⋄ 專題遊戲簡介 ⋄</span>
                         <br>
-                        <p>在我們的世界觀中，資源是有限的，是由人類掌握的，如果食物種族們想要獲得更多的資源，就必須比另一族貢獻更多的菜餚，以獲得人類的青睞。
-                            為了爭奪更多的資源，壯大自己的族群，健康食物族和垃圾食物族展開了一場長久的戰爭！</p>
+                        <span>在我們的世界觀中，資源是有限的，是由人類掌握的， <br> 如果食物種族們想要獲得更多的資源，<br> 就必須比另一族貢獻更多的菜餚，以獲得人類的青睞。<br>
+                            為了爭奪更多的資源，壯大自己的族群， <br> 健康食物族和垃圾食物族展開了一場長久的戰爭！</span><br><br>
 
-                        <p>呷厚哩飽是一款3D小型多人派對遊戲。 <br>
+                        <span>呷厚哩飽是一款3D小型多人派對遊戲。 <br>
                             每場比賽最多有六名玩家，三對三，連線對戰。<br>
-                            玩家將代表食材，分出一部分的自己並與隊友合作製作菜餚，並將自己的菜餚送到目標得分。<br>
-                            五分鐘內得分較高的隊伍為獲勝隊伍。</p>
+                            玩家將代表食材，分出一部分的自己並與隊友合作製作菜餚， <br> 並將自己的菜餚送到目標得分。<br>
+                            五分鐘內得分較高的隊伍為獲勝隊伍。</span><br>
 
-                        <p>除此之外，我們還可以嘗試干擾敵人得分。<br>
-                            玩家可以衝撞敵人或使用武器干擾對手的行動，提高自己的勝率。</p>
+                        <span>除此之外，我們還可以嘗試干擾敵人得分。<br>
+                            玩家可以衝撞敵人或使用武器干擾對手的行動，提高自己的勝率。</span>
                         <div>
                             <div>
-                                <h2>⋄ 宣傳影片 ⋄</h2>
+                                <span>⋄ 宣傳影片 ⋄</span>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/FghEa6_rdyA"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
                             <div>
-                                <h2>⋄ 操作影片 ⋄</h2>
+                                <span>⋄ 操作影片 ⋄</span>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_24FpoMENUA"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -201,22 +216,25 @@
                 </div>
             </div>
 
+
         </section>
+
+
+
         <section id="SCHOOL_CLUB">
             <div>
-                    <img src="./img/title/schoolclub.png" class="titleimg" alt="">
+                <img src="./img/title/schoolclub.png" class="titleimg" alt="">
                 <div>
-                    <h2>除了畫畫剪影片，辦活動我也OK啦！</h2>
-                    <br>
-                    <h3>⋄ 擔任數媒系學會13屆副會長 ⋄</h3>
-                    <p>舉辦了迎新宿營、萬聖節舞會、聖誕節密室逃脫、愛心義賣、全校性活動-亞大電影節等活動，聯繫系上同學情誼。也有多次擔任活動主持人的經驗。</p>
-                    <br>
-                    <h3>⋄ 擔任亞洲大學數媒系107級畢委會公關長 ⋄</h3>
-                    <p>負責對外接洽、邀請業界專業老師擔任評審、廠商贊助合作案發想、小額募資、友校合作。
-                    </p>
+                    <span>除了畫畫剪影片，辦活動我也OK啦！</span>
+                    <br><br>
+                    <span>⋄ 擔任數媒系學會13屆副會長 ⋄</span>
+                    <span>舉辦了迎新宿營、萬聖節舞會、聖誕節密室逃脫、愛心義賣、全校性活動-亞大電影節等活動，聯繫系上同學情誼。也有多次擔任活動主持人的經驗。</span>
+                    <br><br>
+                    <span>⋄ 擔任亞洲大學數媒系107級畢委會公關長 ⋄</span>
+                    <span>負責對外接洽、邀請業界專業老師擔任評審、廠商贊助合作案發想、小額募資、友校合作。
+                    </span>
                 </div>
-                <img src="./img/Banana_UFO.png" alt="Banana_UFO" id="Banana_UFO"
-                    class="sticky-top">
+                <img src="./img/Banana_UFO.png" alt="Banana_UFO" id="Banana_UFO" class="sticky-top">
             </div>
 
             <div class="CLUB_photo">
@@ -239,7 +257,7 @@
         </section>
         <section id="CONTACAT">
             <div>
-                <img src="./img/title/contact.png" width="400px" alt="">
+                <img class="titleimg" src="./img/title/contact.png" width="400px" alt="">
             </div>
             <br>
             <div id="mail">
@@ -270,7 +288,8 @@
 
         </section>
     </main>
-    <link rel="stylesheet" href="./_js/index.js">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./_js/index.js"></script>
 </body>
 
 </html>

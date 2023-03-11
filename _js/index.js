@@ -1,4 +1,31 @@
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
+//   var swiper2 = new Swiper(".mySwiper2", {
+//     slidesPerView: 3,
+//     grid: {
+//       rows: 2,
+//     },
+//     spaceBetween: 30,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
 
 //宣告預設表單內容為空
 var initSubject = '', initBody = '';
@@ -23,3 +50,18 @@ function init() {
     toText.value = initTo;
     bodyText.value = initBody;
 }
+
+// 主要用於在網頁中跳轉到指定的錨點位置
+function scrollToAnchor(aid) {
+    // 使用 $("a[name='" + aid + "']") 語句查找錨點標籤
+    var aTag = $("a[name='" + aid + "']");
+    // aTag.offset().top 屬性來獲取標籤的實際位置，並將它作為 scrollTop 的值。
+    $('html,body').animate({ scrollTop: aTag.offset().top }, 300);
+  }
+  $("li:contains('ABOUT')").click(function () {
+    scrollToAnchor('top');
+  });
+  
+  $("#gosuccess").click(function () {
+    window.scrollTo(0, 0);
+  });
