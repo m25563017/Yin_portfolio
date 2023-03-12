@@ -86,7 +86,7 @@ nav {
     z-index: 1025;
     font-size: 1.4rem;
     color: var(--MainBlue);
-    padding: 0 20px;
+    padding: 0 40px 0 10px;
 }
 
 nav>div>ul {
@@ -171,6 +171,15 @@ nav>div>ul>li>a:hover:after {
     flex-direction: column;
 }
 
+#AWARDS div>span.title2{
+    color: aqua;
+}
+
+#AWARDS div>span.title_txt{
+    color:var(--MainBlue);
+    font-size: 3rem;
+}
+
 #PORTFOLIO {
     padding: 100px 0px;
     display: flex;
@@ -194,7 +203,6 @@ nav>div>ul>li>a:hover:after {
 }
 
 #P_draw{
-    /* width: 60vw; */
     text-align: center;
 }
 
@@ -302,6 +310,15 @@ nav>div>ul>li>a:hover:after {
 
 }
 
+#SCHOOL_CLUB>div:nth-child(1)>img:nth-child(1){
+    width: 20vw;
+    margin:30px 0px;
+}
+
+#SCHOOL_CLUB span.title2{
+    color: aqua;
+}
+
 
 
 .CLUB_photo {
@@ -346,19 +363,51 @@ nav>div>ul>li>a:hover:after {
 
 .title2{
     font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.SongDetail{
+    /* position:fixed; */
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index:50 ;
+}
+
+#P_draw>dialog>figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#P_draw>dialog img{
+    width: 45vw;
+    padding: 30px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .wrapper>div{
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .wrapper>div>img{
     width: 100%;
+    object-fit: cover;
   }
 
-  .wrapper img{
-    width: 20vw;
-  }
-
-#CONTACAT {
+#CONTACT {
     background-image: url(../img/bg_star.png);
     display: flex;
     flex-direction: column;
@@ -366,7 +415,7 @@ nav>div>ul>li>a:hover:after {
 }
 
 #mail>form {
-    width: 900px;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,8 +426,6 @@ nav>div>ul>li>a:hover:after {
 
 
 /* 背景裝飾 */
-
-
 #BG_bubble {
     position: absolute;
     top: 0;
