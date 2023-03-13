@@ -2,9 +2,9 @@
 @font-face {
     font-family: 'GenJyuuGothic-Heavy';
     src: local("GenJyuuGothic-Heavy"),
-        url('../fort/GenJyuuGothic-Heavy.woff') format("woff"),
-        url('../fonts/GenJyuuGothic-Heavy.ttf') format("opentype"),
-        url('../fonts/GenJyuuGothic-Heavy..eot') format("embedded-opentype");
+        url('./fort/GenJyuuGothic-Heavy.woff') format("woff"),
+        url('./fort/GenJyuuGothic-Heavy.ttf') format("opentype"),
+        url('./fort/GenJyuuGothic-Heavy..eot') format("embedded-opentype");
 }
 
 :root {
