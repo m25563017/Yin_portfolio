@@ -531,3 +531,93 @@ textarea {
     border: 0px;
     border-radius: 5px;
 }
+
+
+@media (max-width:720px) {
+    nav{
+        display: none;
+    }
+    
+    span{
+        font-size: 1rem;
+    }
+
+    #index>div{
+        left: 20px;
+        top: 70px;
+    }
+    
+    #index>div>span {
+        font-size: 2rem;
+        -webkit-text-stroke: 2px var(--White);
+    }
+
+    #ABOUT>div{
+        flex-direction: column;
+    }
+
+    #ABOUT>div>img{
+        width: 50vw;
+    }
+    
+    #AWARDS{
+        background-image:url(img/bg_star.png);
+        background-repeat: repeat;
+    
+    }
+
+    #AWARDS>div{
+        flex-direction: column;
+    } 
+
+    #AWARDS>div>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        background-color: var(--MainBlue);
+    }
+
+    #AWARDS div>span.title_txt{
+        color:var(--White);
+        font-size: 2rem;
+    }
+
+    #AWARDS>div>img{
+        width: 70vw;
+    }
+
+    .title_txt {
+        font-size: 2rem;
+    }
+
+    .title2{
+        font-size: 1.5rem;
+        margin: 10px 0px;
+    }
+
+    #P_draw>dialog>figcaption{
+        flex-direction: column;
+    }
+
+    #P_draw>dialog img{
+        width: 70vw;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #card{
+        flex-direction: column;
+    }
+    #card div{
+        width: 40vw;
+    }
+
+    #P_animate>div>a>div>img {
+        width: 40vw;
+        
+       
+    }
+}
