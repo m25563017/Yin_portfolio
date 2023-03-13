@@ -1,3 +1,5 @@
+new WOW().init();
+
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -88,6 +90,35 @@ showDetail.on("click", function (a) {
     return;
   } else {
     showDetail.css({ display: "none", });
+    isPaused = false;
+  }
+})
+
+/* 阻止當前事件冒泡 */
+function stopBubble(e) {
+  if (e && e.stopPropagation) {
+    e.stopPropagation();  //w3c
+  } else {
+    window.event.cancelBubble = true; //IE
+  }
+}
+
+// --------------------------------------------
+const showotherDetail = $("dialog.otherDetail");
+const OtherPic = $("div.otherpic")
+OtherPic.on("click", function () {
+  showotherDetail.css({ display: "flex"});
+
+  const src_S = $(this).find("img").prop("src");
+  $(showotherDetail.children().children()[0]).prop("src", src_S);
+})
+
+/* 任意點擊關閉浮窗 */
+showotherDetail.on("click", function (a) {
+  if ($(a.target).is("img") || $(a.target).is("div") || $(a.target).is("section") || $(a.target).is("price") || $(a.target).is("h6") || $(a.target).is("p")) {
+    return;
+  } else {
+    showotherDetail.css({ display: "none", });
     isPaused = false;
   }
 })

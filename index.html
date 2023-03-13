@@ -32,8 +32,8 @@
 
             </nav>
             <div>
-                <span>Hello!</span>
-                <span>I'm Yin ZI-XUAN</span>
+                <span class="animate__animated animate__bounce loop">Hello!</span>
+                <span class="animate__animated animate__bounce loop">I'm Yin ZI-XUAN</span>
             </div>
             <img src="./img/網頁主視覺1130.png" alt="網頁主視覺">
         </section>
@@ -43,7 +43,7 @@
 
     <main>
         <section id="ABOUT">
-            <div>
+            <div class="wow animate__animated animate__fadeInUp">
                 <img src="./img/about.png" alt="殷子琁">
                 <div>
                     <div>
@@ -72,7 +72,7 @@
         <a name="AWARDS"></a>
 
         <section id="AWARDS">
-            <div>
+            <div class="wow animate__animated animate__fadeInUp">
                 <div>
                     <span class="title_txt">得獎紀錄</span>
                     <span class="title2">⋄2018</span>
@@ -97,15 +97,15 @@
             <div id="P_draw">
                 <img class="titleimg" src="./img/title/portfolio.png" alt=""><br><br>
                 <span class="title_txt">⋄ 平面插畫 ⋄</span>
-                <span class="title2">歌曲印象</span>
+                <span class="title2 spece">歌曲印象</span>
                 
                 <dialog class="SongDetail">
                     <figcaption>
-                        <img class="animate-zoom" src="">
-                        <img class="animate-zoom" src="">
+                        <img class="animate__animated animate__zoomIn" src="">
+                        <img class="animate__animated animate__zoomIn" src="">
                     </figcaption>
                 </dialog>
-                <div class="wrapper">
+                <div class="wrapper wow animate__animated animate__fadeInUp">
                     <div class="songpic">
                         <img src="./img/song_1.png" alt="">
                     </div>
@@ -138,8 +138,13 @@
 
 
 
-                <span class="title2">其他創作</span>
-                <div class="wrapper">
+                <span class="title2 spece" class="wow animate__animated animate__fadeInUp">其他創作</span>
+                <dialog class="otherDetail">
+                    <figcaption>
+                        <img class="animate__animated animate__zoomIn" src="">
+                    </figcaption>
+                </dialog>
+                <div class="wrapper wow animate__animated animate__fadeInUp">
                     <div class="otherpic"><img src="./img/other1.png" alt=""></div>
                     <div class="otherpic"><img src="./img/other2.png" alt=""></div>
                     <div class="otherpic"><img src="./img/other3.png" alt=""></div>
@@ -159,7 +164,7 @@
                     <span>動態創作的部分以音樂PV和MG動畫為主，也喜歡剪輯vlog。</span><br>
                     <span>使用工具為Adobe After Effects、Adobe Premiere Pro。</span>
                 </div>
-                <div id="card">
+                <div id="card" class="wow animate__animated animate__fadeInUp">
                     <a href="https://youtu.be/YUCconDTKC0" target="_blank">
                         <div>
                             <img src="./img/card1.png" alt="">
@@ -187,7 +192,7 @@
 
             <div id="P_foodwar">
                 <span class="title_txt">⋄ 畢業專題-遊戲介面設計 ⋄</span>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper wow animate__animated animate__fadeInUp">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./img/carousel_1.jpg" alt=""></div>
                         <div class="swiper-slide"><img src="./img/carousel_2.png" alt=""></div>
@@ -242,7 +247,7 @@
         <a name="SCHOOL"></a>
 
         <section id="SCHOOL_CLUB">
-            <div>
+            <div class="wow animate__animated animate__fadeInUp">
                 <img src="./img/title/schoolclub.png" class="titleimg" alt="">
                 <div>
                     <span class="title2">除了畫畫剪影片，辦活動我也OK啦！</span>
@@ -283,7 +288,7 @@
                 <img class="titleimg" src="./img/title/contact.png" width="400px" alt="">
             </div>
             <br>
-            <div id="mail">
+            <div id="mail" class="wow animate__animated animate__fadeInUp">
                 <form enctype="text/plain" accept-charset="utf-8">
                     <!-- 寄件者姓名    -->
                     <input id="nameText" type="text" name="Name" value size="100" rows="3" placeholder="你的姓名" required>
@@ -314,6 +319,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./_js/index.js"></script>
 </body>
 
