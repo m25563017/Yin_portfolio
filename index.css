@@ -351,11 +351,6 @@ nav>div>ul>li>a:hover:after {
 
 }
 
-#CLUB_text {
-    width: 70%;
-    color: var(--White);
-
-}
 
 .titleimg {
     width: 20vw;
@@ -617,7 +612,28 @@ textarea {
 
     #P_animate>div>a>div>img {
         width: 40vw;
-        
-       
     }
+
+    #P_foodwar>div>div>div{
+    flex-direction: column;
+}
+
+#P_foodwar>div>div>div>div{
+    margin-bottom: 30px;
+}
+
+#SCHOOL_CLUB{
+    display: flex;
+    align-items: center;
+}
+
+
+#SCHOOL_CLUB>div:nth-child(1){
+    width: 100%;
+}
+
+#photo1,#photo2{
+    display: none;
+ }
+
 }
