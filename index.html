@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -17,6 +19,20 @@
     <header>
         <a name="Top"></a>
         <section id="index">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></button>
+            <div>
+                <ul>
+                    <li><a id="btn_ABout" href="#">ABOUT</a></li>
+                    <li><a id="btn_AWARDS" href="#">AWARDS<br></a></li>
+                    <li><a id="btn_PORTFOLIO" href="#">PORTFOLIO</a></li>
+                    <li><a id="btn_SCHOOL" href="#">SCHOOL CLUB</a></li>
+                    <li><a id="btn_CONTACT" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
             <nav>
                 <a id="btn_Top" href="#">YIN ZI-XUAN</a>
                 <div>
@@ -93,12 +109,12 @@
         <a name="PORTFOLIO"></a>
 
         <section id="PORTFOLIO">
-            
+
             <div id="P_draw">
                 <img class="titleimg" src="./img/title/portfolio.png" alt=""><br><br>
                 <span class="title_txt">⋄ 平面插畫 ⋄</span>
                 <span class="title2 spece">歌曲印象</span>
-                
+
                 <dialog class="SongDetail">
                     <figcaption>
                         <img class="animate__animated animate__zoomIn" src="">
@@ -248,7 +264,7 @@
 
         <section id="SCHOOL_CLUB">
             <div class="wow animate__animated animate__fadeInUp">
-                <img src="./img/title/schoolclub.png" class="titleimg" alt="">
+                <img src="./img/title/schoolclub.png" class="titleimg">
                 <div>
                     <span class="title2">除了畫畫剪影片，辦活動我也OK啦！</span>
                     <br><br>
@@ -258,6 +274,7 @@
                     <span>⋄ 擔任亞洲大學數媒系107級畢委會公關長 ⋄</span>
                     <span>負責對外接洽、邀請業界專業老師擔任評審、廠商贊助合作案發想、小額募資、友校合作。
                     </span>
+                    <img id="photo_gif" src="./img/photo.gif" alt="">
                 </div>
                 <img src="./img/Banana_UFO.png" alt="Banana_UFO" id="Banana_UFO" class="sticky-top">
             </div>
@@ -291,19 +308,18 @@
             <div id="mail" class="wow animate__animated animate__fadeInUp">
                 <form enctype="text/plain" accept-charset="utf-8">
                     <!-- 寄件者姓名    -->
-                    <input id="nameText" type="text" name="Name" value size="100" rows="3" placeholder="你的姓名" required>
+                    <input id="nameText" type="text" name="Name" placeholder="你的姓名" required>
 
                     <br>
                     <!-- 寄件者email -->
-                    <input id="emailText" type="email" name="Email" value size="100" placeholder="Email" required>
+                    <input id="emailText" type="email" name="Email" placeholder="Email" required>
                     <br>
                     <!-- 郵件主旨 -->
-                    <input id="subText" type="text" name="Subject" value size="100" aria-invalid="false"
-                        placeholder="主旨" required>
+                    <input id="subText" type="text" name="Subject" aria-invalid="false" placeholder="主旨" required>
                     <br>
                     <!-- 郵件內容 -->
-                    <textarea id="bodyText" name="your-message" cols="100" rows="10" aria-required="true"
-                        aria-invalid="false" placeholder="有話大聲說，你想跟我說什麼咧？" required></textarea>
+                    <textarea id="bodyText" name="your-message" aria-required="true" aria-invalid="false"
+                        placeholder="有話大聲說，你想跟我說什麼咧？" required></textarea>
                     <br>
                     <!-- 傳送按鈕 -->
                     <div>

@@ -119,6 +119,24 @@ nav>div>ul>li>a:hover:after {
     position: relative;
 }
 
+#index>button{
+    width: 75px;
+    height: 75px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    border-radius: 50px;
+    border: 4px solid var(--White);
+    background-color:var(--MainBlue);
+}
+
+#index>button>svg{
+    color: #fff;
+    width: 35px;
+}
+
 #index>img {
     width: 100%;
     margin: auto;
@@ -141,12 +159,12 @@ nav>div>ul>li>a:hover:after {
     letter-spacing: 0.02em;
 }
 
-.loop{
-    animation: bounce infinite; 
+.loop {
+    animation: bounce infinite;
 }
 
-.zoomIn{
-    animation:zoomIn 0.1ms ;
+.zoomIn {
+    animation: zoomIn 0.1ms;
 }
 
 #AWARDS {
@@ -179,12 +197,12 @@ nav>div>ul>li>a:hover:after {
     flex-direction: column;
 }
 
-#AWARDS div>span.title2{
+#AWARDS div>span.title2 {
     color: aqua;
 }
 
-#AWARDS div>span.title_txt{
-    color:var(--MainBlue);
+#AWARDS div>span.title_txt {
+    color: var(--MainBlue);
     font-size: 3rem;
 }
 
@@ -194,9 +212,9 @@ nav>div>ul>li>a:hover:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(img/bg_boder.png),url(img/bg_bodertop.png), url(img/bg.png);
-    background-repeat: repeat-x,repeat-x, repeat;
-    background-position: top,bottom,center;
+    background-image: url(img/bg_boder.png), url(img/bg_bodertop.png), url(img/bg.png);
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-position: top, bottom, center;
 }
 
 #PORTFOLIO>div {
@@ -206,7 +224,7 @@ nav>div>ul>li>a:hover:after {
     justify-content: center;
 }
 
-#P_draw{
+#P_draw {
     text-align: center;
 }
 
@@ -247,11 +265,11 @@ nav>div>ul>li>a:hover:after {
     border-radius: 30px 30px 0 0;
 }
 
-#P_animate{
+#P_animate {
     padding: 80px 0;
 }
 
-#P_foodwar>div{
+#P_foodwar>div {
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -260,31 +278,32 @@ nav>div>ul>li>a:hover:after {
     text-align: center;
 }
 
-#P_foodwar>div>div>div{
+#P_foodwar>div>div>div {
     display: flex;
     padding: 50px 0;
 }
+
 /* ------------------------ */
- .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ----------------------------------- */
 
@@ -314,12 +333,12 @@ nav>div>ul>li>a:hover:after {
 
 }
 
-#SCHOOL_CLUB>div:nth-child(1)>img:nth-child(1){
+#SCHOOL_CLUB>div:nth-child(1)>img:nth-child(1) {
     width: 20vw;
-    margin:30px 0px;
+    margin: 30px 0px;
 }
 
-#SCHOOL_CLUB span.title2{
+#SCHOOL_CLUB span.title2 {
     color: aqua;
 }
 
@@ -360,13 +379,13 @@ nav>div>ul>li>a:hover:after {
     font-size: 2.5rem;
 }
 
-.title2{
+.title2 {
     font-size: 2rem;
     margin: 10px 0px;
 }
 
-.SongDetail{
-    position:fixed;
+.SongDetail {
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -377,11 +396,11 @@ nav>div>ul>li>a:hover:after {
     justify-content: center;
     align-items: center;
 
-    z-index:50 ;
+    z-index: 50;
 }
 
-.otherDetail{
-    position:fixed;
+.otherDetail {
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -392,46 +411,52 @@ nav>div>ul>li>a:hover:after {
     justify-content: center;
     align-items: center;
 
-    z-index:50 ;
+    z-index: 50;
 }
 
-#P_draw>dialog>figcaption{
+#P_draw>dialog>figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#P_draw>dialog img{
+#P_draw>dialog img {
     width: 45vw;
     padding: 30px;
 }
 
-.spece{
+.spece {
     margin: 80px 0px 30px 0px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
+}
 
-  .wrapper>div{
+.wrapper>div {
     width: 350px;
     height: 300px;
     overflow: hidden;
     background-color: #fff;
-  }
+}
 
-  .wrapper>div>img{
+.wrapper>div>img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    
-  }
 
-  .wrapper>div>img:hover{
+}
+
+.wrapper>div>img:hover {
     opacity: 50%;
-  }
+}
+
+#photo_gif {
+    display: none;
+    padding: 30px;
+    border-radius: 30px;
+}
 
 #CONTACT {
     background-image: url(img/bg_star.png);
@@ -449,13 +474,13 @@ nav>div>ul>li>a:hover:after {
     padding: 30px;
 }
 
-#mail>form>div:last-child>input{
-width: 5vw;
-height: 50px;
-background-color: #F2A0A7;
-color: var(--White);
-font-size: 1.2rem;
-font-family: GenJyuuGothic-Heavy;
+#mail>form>div:last-child>input {
+    width: 100px;
+    height: 50px;
+    background-color: #F2A0A7;
+    color: var(--White);
+    font-size: 1.2rem;
+    font-family: GenJyuuGothic-Heavy;
 
 }
 
@@ -494,7 +519,7 @@ font-family: GenJyuuGothic-Heavy;
 
 #BG_bubble4 {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 200px;
     rotate: 45deg;
     width: 8vw;
@@ -529,41 +554,42 @@ textarea {
 
 
 @media (max-width:720px) {
-    nav{
+    nav {
         display: none;
     }
-    
-    span{
+
+    span {
         font-size: 1rem;
     }
 
-    #index>div{
+    #index>div {
         left: 20px;
         top: 70px;
     }
-    
+
     #index>div>span {
         font-size: 2rem;
         -webkit-text-stroke: 2px var(--White);
     }
 
-    #ABOUT>div{
+    #ABOUT>div {
         flex-direction: column;
     }
 
-    #ABOUT>div>img{
+    #ABOUT>div>img {
         width: 50vw;
     }
-    
-    #AWARDS{
-        background-image:url(img/bg_star.png);
+
+    #AWARDS {
+        background-image: url(img/bg_star.png);
         background-repeat: repeat;
-    
+
     }
 
-    #AWARDS>div{
+    #AWARDS>div {
         flex-direction: column;
-    } 
+        padding: 50px;
+    }
 
     #AWARDS>div>div {
         display: flex;
@@ -573,12 +599,12 @@ textarea {
         background-color: var(--MainBlue);
     }
 
-    #AWARDS div>span.title_txt{
-        color:var(--White);
+    #AWARDS div>span.title_txt {
+        color: var(--White);
         font-size: 2rem;
     }
 
-    #AWARDS>div>img{
+    #AWARDS>div>img {
         width: 70vw;
     }
 
@@ -586,27 +612,28 @@ textarea {
         font-size: 2rem;
     }
 
-    .title2{
+    .title2 {
         font-size: 1.5rem;
         margin: 10px 0px;
     }
 
-    #P_draw>dialog>figcaption{
+    #P_draw>dialog>figcaption {
         flex-direction: column;
     }
 
-    #P_draw>dialog img{
+    #P_draw>dialog img {
         width: 70vw;
     }
 
-    .wrapper{
+    .wrapper {
         grid-template-columns: 1fr 1fr;
     }
 
-    #card{
+    #card {
         flex-direction: column;
     }
-    #card div{
+
+    #card div {
         width: 40vw;
     }
 
@@ -614,26 +641,101 @@ textarea {
         width: 40vw;
     }
 
-    #P_foodwar>div>div>div{
-    flex-direction: column;
-}
+    #P_foodwar>div>div>div {
+        flex-direction: column;
+    }
 
-#P_foodwar>div>div>div>div{
-    margin-bottom: 30px;
-}
+    #P_foodwar>div>div>div>div {
+        margin-bottom: 30px;
+    }
 
-#SCHOOL_CLUB{
-    display: flex;
-    align-items: center;
-}
+    #SCHOOL_CLUB {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
 
 
-#SCHOOL_CLUB>div:nth-child(1){
-    width: 100%;
-}
+    #SCHOOL_CLUB>div:nth-child(1) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-#photo1,#photo2{
-    display: none;
- }
+    #photo1,
+    #photo2 {
+        display: none;
+    }
 
+    #SCHOOL_CLUB>div>div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--MainBlue);
+    }
+
+    #SCHOOL_CLUB>div:nth-child(1)>img:nth-child(1){
+        width: 50%;
+    }
+
+    .titleimg {
+        width: 35vw;
+    }
+
+    #nameText,
+    #emailText,
+    #subText {
+        width: 100%;
+        height: 30px;
+    }
+
+    #bodyText {
+        width: 100%;
+        height: 100px;
+    }
+
+    #photo_gif {
+        display: flex;
+    }
+
+    #BG_bubble{
+        width: 100px;
+    }
+
+    #BG_bubble1{
+        width: 80px;
+    }
+
+    #BG_bubble2{
+        width: 80px;
+    }
+
+    #BG_bubble3{
+        width: 50px;
+        left: 60px;
+    }
+
+    #BG_bubble4{
+        width: 110px;
+        right: 30px;
+        bottom: 0px;
+    }
+
+    #Banana_Talk{
+        width: 220px;
+        left: 350px;
+        bottom: 0;
+    }
+
+    #Banana_UFO{
+        display: none;
+    }
+
+    #index>button{
+        display: block;
+    }
 }
