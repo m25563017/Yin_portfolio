@@ -119,23 +119,6 @@ nav>div>ul>li>a:hover:after {
     position: relative;
 }
 
-#index>button{
-    width: 75px;
-    height: 75px;
-    display: none;
-    position: fixed;
-    z-index: 100;
-    top: 10px;
-    right: 10px;
-    border-radius: 50px;
-    border: 4px solid var(--White);
-    background-color:var(--MainBlue);
-}
-
-#index>button>svg{
-    color: #fff;
-    width: 35px;
-}
 
 #index>img {
     width: 100%;
@@ -228,6 +211,10 @@ nav>div>ul>li>a:hover:after {
     text-align: center;
 }
 
+#P_animate>div:nth-child(1){
+    background-color: #f5f9ff;
+}
+
 #P_animate>div>a>div {
     display: flex;
     flex-direction: column;
@@ -260,12 +247,12 @@ nav>div>ul>li>a:hover:after {
 }
 
 #P_animate>div>a>div>img {
-    width: 25vw;
+    width: 100%;
     margin-bottom: 40px;
     border-radius: 30px 30px 0 0;
 }
 
-#P_animate {
+#P_animate{
     padding: 80px 0;
 }
 
@@ -281,6 +268,10 @@ nav>div>ul>li>a:hover:after {
 #P_foodwar>div>div>div {
     display: flex;
     padding: 50px 0;
+}
+
+#P_foodwar>div>div>div>div{
+    flex-direction:column;
 }
 
 /* ------------------------ */
@@ -305,6 +296,10 @@ nav>div>ul>li>a:hover:after {
     object-fit: cover;
 }
 
+iframe{
+    width: 30vw;
+    height: 316px;
+}
 /* ----------------------------------- */
 
 
@@ -484,6 +479,15 @@ nav>div>ul>li>a:hover:after {
 
 }
 
+#nameText,#emailText,#subText{
+    width: 40vw;
+    height: 50px;
+}
+#bodyText{
+    width: 40vw;
+    height: 100px;
+}
+
 
 /* 背景裝飾 */
 #BG_bubble {
@@ -552,6 +556,19 @@ textarea {
     border-radius: 5px;
 }
 
+@media (max-width:1050px){
+nav{
+    font-size: 1.2rem;
+}
+
+#index>div{
+    left: 100px;
+}
+
+#index>div>span{
+    font-size: 3rem;
+}
+}
 
 @media (max-width:720px) {
     nav {
@@ -627,6 +644,11 @@ textarea {
 
     .wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .wrapper>div{
+        width: 40vw;
+        height: 300px;
     }
 
     #card {
@@ -737,5 +759,86 @@ textarea {
 
     #index>button{
         display: block;
+    }
+}
+
+@media (max-width:450px){
+    
+    #index>div>span{
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 0.5rem;
+    }
+    #AWARDS>div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe{
+        width: 80vw;
+    }
+
+    #SCHOOL_CLUB div{
+       width: 100%;
+       padding: 20px;
+       text-align: center;
+    }
+
+    .wrapper>div{
+        width: 40vw;
+        height: 150px;
+    }
+
+    .swiper-slide img {
+        object-fit: cover;
+    }
+
+    #card>a{
+        padding: 20px;
+    }
+
+    #P_animate>div>a>div{
+        width: 50vw;
+    }
+
+    #P_animate>div>a>div>img {
+        width: 100%;
+    }
+
+    #index>button{
+        width: 50px;
+        height: 50px;
+    }
+
+    #index>button>svg{
+        width: 20px;
+    }
+
+    #BG_bubble1{
+        width: 50px;
+    }
+
+    #BG_bubble2{
+        width: 50px;
+    }
+
+    #BG_bubble3{
+        width: 40px;
+        left: 10px;
+    }
+
+    #BG_bubble4{
+        width: 60px;
+        right: 30px;
+        bottom: 0px;
+    }
+
+    #Banana_Talk {
+        position: absolute;
+        bottom: 30px;
+        left: 200px;
+        width: 40vw;
     }
 }
